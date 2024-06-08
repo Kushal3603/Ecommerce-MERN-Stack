@@ -33,10 +33,11 @@ var productSchema = new mongoose.Schema({
     },
     sold:{
         type:Number,
-        default:0
+        default:0,
     },
     images:{
-        type:Array,
+        public_id:String,
+        url:String
     },
     color:{
         type:String,
