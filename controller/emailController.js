@@ -1,9 +1,9 @@
 const nodemailer=require('nodemailer')
 const asyncHandler=require('express-async-handler')
 
-const sendEmail=asyncHandler(async(req,res)=>{
+const sendEmail=asyncHandler(async(data,req,res)=>{
     let transporter=nodemailer.createTransport({
-        host:"smtp.ethereal.email",
+        host:"smtp.gmail.com",
         port:587,
         secure:false,
         auth:{
@@ -13,11 +13,11 @@ const sendEmail=asyncHandler(async(req,res)=>{
     })
 
     let info=await transporter.sendMail({
-        from:'"Hey "<abc@gmail.com.com>',
+        from:'"Hey "<abc@gmail.com>',
         to:data.to,
         subject:data.subject,
         text:data.text,
-        html:data.htm
+        html:data.html
     })
     console.log("Message sent: %s",info.messageId);
     console.log("Preview URL: %s",nodemailer.getTestMessageUrl(info));
