@@ -34,7 +34,7 @@ var blogSchema = new mongoose.Schema({
     }],
     image:{
         type:String,
-        default:"https://www.shutterstock.com/image-photo/city-square-skyline-modern-buildings-scenery-2381315907"
+        default:"https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-1029506242"
     },
     author:{
         type:String,
