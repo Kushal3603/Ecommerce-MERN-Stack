@@ -85,9 +85,9 @@ const Header = () => {
                       <span className='me-5 d-inline-block'>Shop Categories</span>
                     </button>
                     <ul className="dropdown-menu">
-                      <li><Link to='' className="dropdown-item text-white" href="#">Action</Link></li>
-                      <li><Link to='' className="dropdown-item text-white" href="#">Another action</Link></li>
-                      <li><Link to='' className="dropdown-item text-white" href="#">Something else here</Link></li>
+                      <li><Link to='' className="dropdown-item" href="#">Action</Link></li>
+                      <li><Link to='' className="dropdown-item " href="#">Another action</Link></li>
+                      <li><Link to='' className="dropdown-item " href="#">Something else here</Link></li>
                     </ul>
                 </div>
                 </div>
