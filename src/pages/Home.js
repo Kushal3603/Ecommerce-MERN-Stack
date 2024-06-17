@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '../App.css'
 import Marquee from 'react-fast-marquee'
 import ProductCard from '../components/ProductCard'
+import SpecialProduct from '../components/SpecialProduct'
 const Home = () => {
   return (
     <>
@@ -170,6 +171,35 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className='featured-wrapper home-wrapper-2 py-5'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <h3 className='section-heading'>
+                Featured Collection
+              </h3>
+            </div>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+          </div>
+        </div>
+      </section>
+      <section className='special-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12 mb-3'>
+              <h3 className='section-heading'>Special Products</h3>
+            </div>
+            <div className='row '>
+              <SpecialProduct/>
+              <SpecialProduct/>
+              <SpecialProduct/>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='marquee-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
@@ -207,21 +237,7 @@ const Home = () => {
           </div>
         </div>
       </section> 
-      <section className='home-wrapper-2 py-5'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <h3 className='section-heading'>
-                Featured Collection
-              </h3>
-            </div>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-          </div>
-        </div>
-      </section>
+      
     </>
   )
 }

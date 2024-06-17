@@ -82,7 +82,7 @@ const Header = () => {
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src='images/menu.svg' alt='menu'/>
-                      <span className='me-5 d-inline-block'>Shop Categories</span>
+                      <span className='me-5'>Shop Categories</span>
                     </button>
                     <ul className="dropdown-menu">
                       <li><Link to='' className="dropdown-item" href="#">Action</Link></li>

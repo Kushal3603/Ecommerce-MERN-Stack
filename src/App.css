@@ -36,7 +36,9 @@ a{
   text-decoration: none;
   display: inline-block;
 }
-
+.gap-5{
+  gap:5px;
+}
 .gap-10{
   gap: 10px;
 }
@@ -284,7 +286,7 @@ footer .input-group-text{
 
 .product-card .product-details p.price{
   color: var(--color-1c1c1b);
-  font-size: 16px;
+  font-size: 16px ; 
 }
 
 .action-bar{
@@ -296,4 +298,16 @@ footer .input-group-text{
 .wishlist-icon{
   top:2%;
   right: 15px;
+}
+
+/* Special Product Card */
+
+.special-product-card{
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.special-product-card .badge{
+  background-color: #eb353b00 ;
 }
